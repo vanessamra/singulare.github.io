@@ -5,44 +5,52 @@
 body{
     font-weight:lighter;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #373D49;
-    margin: 0px;
-    padding: 0px;
-}
-header{
-    background-color: #373D49;
-    top: 0;
-} 
-.logo{ 
-    padding: 5px;
-    height: 122px;   
-}
-.topo{
-    text-align:center;  
-}
-section{
     background-image: url(../images/Imagem120.jpg);
     background-size:cover;
     background-repeat: no-repeat; 
     background-attachment: fixed;   
 }
-.meio{
+header{
+    background-color: #373D49;
+    top: 0;
+
+} 
+.topo{
     text-align:center;  
+    width: 100%;
+}
+.logo{ 
+    padding: 5px;
+    height: 122px;   
+}
+.meio{
+    margin-left: 30%;
+    position: absolute;
 }
 .lindos{
     width:500px;
     height: auto;
     margin-top: 400px;
-    outline: 20px solid #373D49;     
+    border: 20px solid #373D49;
+    border-radius: 15px;
 }
+section{
+
+  background-color: #373D49;
+  position: absolute;
+  margin-top: 590px;
+  padding-bottom: 50px;
+
+}
+
 .fundo2{
-    margin-top: 60px;
+    margin-top: 100px; 
 }
 .texto{
     margin-right: 30px;
     max-width: 40%;
     display: inline-block;
-    float:right;
+    float: right;
     font-size: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -56,6 +64,7 @@ h1{
     color: white;
     font-weight:lighter;
     text-align: center;
+    font-size: 30px;
 }
 .i1{
     width: 160px;
@@ -66,6 +75,15 @@ h1{
     display: inline-block;
     float: left;  
 }
+
+footer{
+    margin-top: 1150px;
+    background-color: #373D49;
+    position: absolute;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
 h2{
    font-weight:400;
    text-align: center;
@@ -75,10 +93,11 @@ h2{
     max-width: 100%;
     background-color: #FFFFFFBB;
     opacity: 0.3;
-    padding: 20px;
+    padding: 80px;
     text-align: center;  
     border: 0.5px solid #373D49;
     border-radius: 5px;
+    padding-top: 40px;
 }
 input{
     width: 50%;
@@ -93,9 +112,6 @@ input{
     padding: 50px;
     border:none;    
 }
-footer{
-    margin-top: 550px;  
-}
 .icon{
     text-align: right;     
 }
@@ -103,8 +119,111 @@ footer{
     font-weight:410;
     text-align: center;
     color: white;
-    margin-top: 100px;
-    margin-bottom: 15px;
+    margin-top: 100px;  
+}
+
+@media screen and (max-width: 500px){
+    header{
+        background-color: #373D49;
+        width: 100%;
+        border: 40px solid #373D49;
+    } 
+    .topo{
+        text-align:center;  
+    }
+    .logo{ 
+        padding: 5px;
+        height: 110px;   
+    }
+    .meio{
+       margin: 0;
+       position: absolute;
+    }
+    .lindos{
+        margin: 0;
+        padding:0;
+        border: none;
+        width: 400px;
+        margin-top: 300px;
+        border: 15px solid #373D49;
+        border-radius: 15px;
+        height: auto; 
+    }
+    section{
+        background-color: #373D49;
+        width: 100%;
+        position: absolute;
+        margin-top:410px;
+        border: 40px solid #373D49;
+      }
+    .fundo2{
+        margin:0;
+    }
+    .texto{
+        display: block;
+        font-size: 20px;  
+        margin-top: 50px;
+        float: none;
+        max-width: 100%;
+    }
+    p{
+        color:white;
+        padding: 10px;  
+    }
+    .i1{
+        display: inline;
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        margin:0;
+        padding: 15px;
+        float: none;
+    }
+    footer{
+        margin-top: 1660px;
+        background-color: #373D49;
+        position: absolute;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 10px;
+        border: 40px solid #373D49;
+    }
+    h2{
+       font-weight:400;
+       text-align: center;
+       color:black;
+    }
+    .formContainer{
+
+        background-color: #FFFFFFBB;
+        opacity: 0.3;
+        padding: 80px;
+        text-align: center;  
+        border-radius: 5px;
+        padding-top: 40px;
+    }
+    input{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 3px;
+        border: none;
+        margin-bottom: 10px;  
+    }
+    #msg{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 50px;
+        border:none;    
+    }
+    .icon{
+        padding:15px;
+    }
+    .contato{
+        font-weight:410;
+        text-align: center;
+        color: white;
+        margin-top: 100px;  
+    }
 }
 
 
